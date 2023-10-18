@@ -1,0 +1,31 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+    <script language="javascript">
+        function resizeText(multiplier) {
+            multiplyText(multiplier, document.getElementById('myContent'));
+        }
+
+        function multiplyText(multiplier, txtobj) {
+
+            if (txtobj.style.fontSize == '') {
+                txtobj.style.fontSize = "100%";
+            }
+
+            if (multiplier == 0) {
+                txtobj.style.fontSize = "100%";
+            } else {
+                txtobj.style.fontSize = parseFloat(txtobj.style.fontSize) + multiplier + "%";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <p id="myContent">
+        <a href="javascript:resizeText(10);">คลิกเพิ่มขนาดตัวอักษร</a></p>
+</body>
+
+</html>

@@ -1,0 +1,129 @@
+/* Reset some default styles */
+
+* {
+    margin: 1px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Body styles */
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+
+/* Header styles */
+
+header {
+    border-radius: 10px;
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav li:hover {
+    background-color: #7e7e7e;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+
+/* drop down */
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 50px;
+    height: auto;
+}
+
+.logo a:hover {
+    color: #ff6600;
+}
+
+.nav-links li {
+    list-style: none;
+    display: inline;
+    margin-right: 1rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+/* Hero section styles */
+
+.hero {
+    background-image: url('hero-background.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 5rem;
+    color: #6b6b6b;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #6b6b6b;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+}
+
+.hero a:hover {
+    background-color: #555;
+}
+
+
+/* Features section styles */
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 3rem 0;
+}
+
+.feature {
+    text-align: center;
+}
+
+.feature h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+
+/* Footer styles */
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}

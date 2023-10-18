@@ -1,0 +1,137 @@
+/* @import url('');
+body {
+    background-image: url("https://img.freepik.com/free-vector/white-grid-line-pattern-gray-background_53876-99015.jpg?w=900&t=st=1689861053~exp=1689861653~hmac=28a7b9f0e541fdd889629e3c70e5d55a92ba027b4ca077d914e59d58881934bd"), url("paper.gif");
+    background-color: #f50000;
+} */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    /* background-color: red; */
+}
+
+
+/* header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 7px 45px;
+    background: #a1cdf7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+    border: 5px solid #ffff;
+    border-radius: 15px;
+} */
+
+
+/*.navigation li {
+    font-size: 0.8em;
+    line-height: 40px;
+    text-align: left;
+}
+
+img {
+    border-radius: 10px;
+    max-width: 50px;
+    margin-left: 20px;
+} */
+
+
+/* .logo {
+    font-size: 2em;
+    color: #000;
+    user-select: none;
+} */
+
+.navigation ul {
+    list-style: none;
+    background-color: #444;
+    text-align: right;
+    padding: 0;
+    margin: 0;
+}
+
+.navigation li {
+    font-size: 1.2em;
+    line-height: 40px;
+    text-align: center;
+}
+
+.navigation a {
+    font-size: .8em;
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    padding-left: 15px;
+    transition: .3s;
+    border-bottom: 5px solid #888;
+    position: sticky;
+}
+
+.navigation a:hover {
+    background-color: #797979;
+    /* border: 3px solid #fff; */
+    border-radius: 12px;
+    /* align-items: center; */
+    /* position: inherit; */
+    display: block;
+}
+
+.navigation a.active {
+    background-color: #ffffff;
+    color: #444;
+    cursor: default;
+}
+
+.navigation li li {
+    font-size: .8em;
+}
+
+
+/* style menu for lasger screen */
+
+@media screen and (min-width: 650px) {
+    .navigation li {
+        width: 130px;
+        border-bottom: none;
+        height: 50px;
+        line-height: 50px;
+        font-size: 1.1em;
+        display: inline-block;
+        margin-left: -4px;
+    }
+}
+
+.navigation a {
+    border-bottom: none;
+}
+
+.navigation>ul>li {
+    text-align: center;
+}
+
+.navigation>ul>li>a {
+    padding-left: 0;
+}
+
+
+/* Sub Menu */
+
+.navigation li ul {
+    position: absolute;
+    display: none;
+    width: inherit;
+}
+
+.navigation ul li :hover ul {
+    display: block;
+}
+
+.navigation li ul li {
+    display: block;
+}
